@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHEUNG Wai Shing_</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+    .section {
+      scroll-margin-top: 80px;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <!-- Header with Navigation -->
+  <header class="bg-blue-700 text-white fixed top-0 w-full shadow-md z-10">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold">Your Name</h1>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="#home" class="hover:underline">Home</a></li>
+          <li><a href="#about" class="hover:underline">About</a></li>
+          <li><a href="#projects" class="hover:underline">Projects</a></li>
+          <li><a href="#contact" class="hover:underline">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto pt-20">
+    <!-- Home Section -->
+    <section id="home" class="section min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-100 to-blue-200">
+      <div class="text-center">
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">Hi, I'm CHEUNG Wai Shing</h2>
+        <p class="text-lg text-gray-600 mb-6">Information Engineering Student at CUHK | Passionate in Signal Processing, Machine Learning</p>
+        <a href="#contact" class="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600">Get in Touch</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section py-12 bg-white rounded shadow">
+      <h2 class="text-3xl font-semibold text-gray-800 text-center mb-6">About Me</h2>
+      <div class="max-w-3xl mx-auto text-gray-700">
+        <p class="mb-4">I'm a student majoring in Information Engineering at The Chinese University of Hong Kong, with a strong interest in telecommunications, web development, and embedded systems. My skills include:</p>
+        <ul class="list-disc list-inside mb-4">
+          <li>Programming: C/C++, Python, JavaScript, HTML, CSS</li>
+          <li>Projects: Arduino-based weather station, socket programming, data analysis with SQL</li>
+          <li>Networking: Knowledge of telecom systems and protocols</li>
+        </ul>
+        <p>I'm self-motivated, detail-oriented, and eager to contribute to innovative projects, as demonstrated by my recent internship at a leading local company.</p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section py-12 bg-gray-50">
+      <h2 class="text-3xl font-semibold text-gray-800 text-center mb-6">My Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="text-xl font-semibold text-gray-800">Arduino Weather Station</h3>
+          <p class="text-gray-600">Built a weather monitoring system using Arduino to collect and display temperature and humidity data.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="text-xl font-semibold text-gray-800">Socket Programming Chat App</h3>
+          <p class="text-gray-600">Developed a real-time chat application using C/C++ with socket programming for client-server communication.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section py-12 bg-white rounded shadow">
+      <h2 class="text-3xl font-semibold text-gray-800 text-center mb-6">Contact Me</h2>
+      <div class="max-w-md mx-auto text-gray-700">
+        <p class="mb-4">Interested in collaborating or learning more? Reach out to me!</p>
+        <p>Email: <a href="mailto:your.email@example.com" class="text-blue-500 hover:underline">your.email@example.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" class="text-blue-500 hover:underline">linkedin.com/in/yourprofile</a></p>
+        <p class="mt-4">Fluent in English, Cantonese, and Putonghua.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white p-4">
+    <div class="container mx-auto text-center">
+      <p>© 2025 Your Name. Built with passion and code.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
